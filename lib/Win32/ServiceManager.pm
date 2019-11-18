@@ -55,7 +55,7 @@ sub _nssm_install {
 }
 
 sub _sc_install {
-   qw(sc create), $_[1], qq(binpath= "$_[2]") . ($_[3] ?  " $_[3]" : ''),
+   qw(sc create), $_[1], qq(binpath= "$_[2]"),
 }
 
 sub _sc_configure {
